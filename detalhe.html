@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tópico | CYBERAI</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header class="topo">
+        <a class="logo" href="index.html">◈ CYBER<span>AI</span></a>
+        <a class="voltar" href="index.html">← Página inicial</a>
+    </header>
+
+    <main class="pagina-detalhe">
+        <div class="etiqueta">MÓDULO DE APRENDIZADO</div>
+
+        <div id="conteudo-detalhe">
+            <h1>Carregando conteúdo...</h1>
+        </div>
+
+        <div id="editor" class="editor" hidden>
+            <span class="etiqueta">PAINEL DE EDIÇÃO</span>
+            <h2>Edite seu conteúdo</h2>
+            <p class="texto-suave">
+                Preencha os campos abaixo e salve suas alterações.
+            </p>
+
+            <form id="form-editor">
+                <label for="campo-icone">Ícone (emoji)</label>
+                <input id="campo-icone" maxlength="8" placeholder="🤖" required>
+
+                <label for="campo-titulo">Título do tópico</label>
+                <input id="campo-titulo" maxlength="100" required>
+
+                <label for="campo-resumo">Resumo</label>
+                <textarea id="campo-resumo" rows="3" required></textarea>
+
+                <label for="campo-informacoes">Informações principais</label>
+                <textarea id="campo-informacoes" rows="8" required
+                    placeholder="Digite aqui as informações do seu trabalho..."></textarea>
+
+                <label for="campo-conclusao">Conclusão</label>
+                <textarea id="campo-conclusao" rows="4" required></textarea>
+
+                <div class="acoes-editor">
+                    <button type="submit" class="botao">💾 Salvar informações</button>
+                    <button type="button" id="cancelar-edicao"
+                        class="botao-secundario">Cancelar</button>
+                </div>
+            </form>
+        </div>
+
+        <nav class="navegacao">
+            <a href="index.html" class="botao-secundario">← Voltar aos cards</a>
+            <button type="button" id="editar" class="botao">✏️ Editar conteúdo</button>
+            <button type="button" id="imprimir" class="botao-secundario">
+                Imprimir / PDF
+            </button>
+            <button type="button" id="excluir" class="botao-perigo" hidden>
+                Excluir tópico
+            </button>
+        </nav>
+
+        <p id="mensagem" class="mensagem" role="status"></p>
+    </main>
+
+    <footer>
+        <span>CYBERAI © 2026</span>
+        <span>TECNOLOGIA COM RESPONSABILIDADE</span>
+    </footer>
+</body>
+</html>
